@@ -1,4 +1,4 @@
-
+// Print 1 To N Without Loop
 // Program of Print 1 to N without Loop
 
 class Solution{

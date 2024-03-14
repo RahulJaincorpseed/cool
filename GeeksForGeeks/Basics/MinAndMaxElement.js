@@ -1,3 +1,5 @@
+// Find minimum and maximum element in an array
+
 // Program of find Min and Max Element in an Array
 
 class Solution{
