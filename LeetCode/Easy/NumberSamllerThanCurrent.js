@@ -1,8 +1,7 @@
 // How Many Numbers Are Smaller Than the Current Number
 
-
-var smallerNumbersThanCurrent = function(nums) {
-    const result = []
+var smallerNumbersThanCurrent = function (nums) {
+  const result = []
   let count
   for (let i = 0; i < nums.length; i++) {
     count = 0
@@ -15,4 +14,4 @@ var smallerNumbersThanCurrent = function(nums) {
   }
 
   return result
-};
+}
