@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Raleway:ital,wght@0,400;0,600;1,400;1,500&display=swap");
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;700&display=swap");
+
+/* font-family: 'Tajawal', sans-serif; */
+
+body {
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+:root {
+  --main-gradient: -webkit-linear-gradient(105deg, #4158d0 41%, #c850c0 46%);
+  --main-hover-gradient: -webkit-linear-gradient(
+    105deg,
+    #c850c0 41%,
+    #4158d0 46%
+  );
+  --white: #ffffff;
+  --black: #000000;
+}
+
+/* ++++++++++++ common classes  ++++++++++++++ */
+
+.all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.section-padding {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* ++++++++++++ common classes  ++++++++++++++ */
+
+/* common buttons heading  */
+
+.rj-hire-btn {
+  padding: 12px 24px;
+  background: var(--main-gradient);
+  border-radius: 10px;
+  color: var(--white);
+}
+
+.rj-hire-btn:hover {
+  background: var(--main-hover-gradient);
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* +++++ small common button ++++++++++++ */
+.small-cm-btn {
+  padding: 6px 12px;
+  background: var(--main-gradient);
+  color: var(--white);
+  border: none;
+  outline: none;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.cm-large {
+  padding: 12px 24px;
+}
+
+.small-cm-btn:focus {
+  border: none;
+  outline: none;
+}
+
+.small-cm-btn:hover {
+  background: var(--main-hover-gradient);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.our-container {
+  max-width: 1500px;
+}
+
+/* +++++ small common button ++++++++++++ */
+
+.main-heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  background: var(--main-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.small-heading {
+  font-size: 22px;
+  font-weight: 600;
+  background: var(--main-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Article code */
+
+.article-layout{
+  padding: 35px;
+}
+
+/* common circle code */
+
+.first-circle {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  top: 20%;
+  left: 30%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: #36d1dc;
+  background: -webkit-linear-gradient(to right, #5b86e5, #36d1dc);
+  background: linear-gradient(to right, #5b86e5, #36d1dc);
+}
+
+/* login button */
+
+.login-btn {
+  padding: 12px 24px;
+  background: var(--main-gradient);
+  border-radius: 10px;
+  color: var(--white);
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: var(--main-hover-gradient);
+}
+
+.login-btn:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .third-circle {
+    display: none;
+  }
+  .second-circle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .main-heading {
+    font-size: 30px;
+  }
+}

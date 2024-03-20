@@ -1,0 +1,57 @@
+.art-big-card:nth-child(even){
+    direction: rtl;
+}
+.art-big-card {
+  padding: 40px 10px;
+  display: grid;
+  height: 500px;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  .art-content {
+    .art-desc {
+      color: #6b6868;
+      font-size: 16px;
+    }
+  }
+  .art-image {
+    position: relative;
+    .left-side {
+      position: absolute;
+      height: 350px;
+      width: 450px;
+      top: 0;
+      left: 0;
+      background: #c850c0;
+      box-shadow: 0px 15px 20px #c850c0;
+      opacity: 0.3;
+      border-radius: 5px;
+    }
+    .right-side {
+      position: absolute;
+      border: 1px solid green;
+      height: 350px;
+      width: 450px;
+      bottom: 0;
+      right: 0;
+      background: #4158d0;
+      box-shadow: 0px 25px 35px #4158d0;
+      opacity: 0.3;
+      border-radius: 5px;
+    }
+    .center-side {
+      position: absolute;
+      inset: 0;
+      height: 360px;
+      width: 450px;
+      margin: auto;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
