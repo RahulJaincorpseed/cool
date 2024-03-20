@@ -1,0 +1,62 @@
+.certificate {
+  padding-left: 25px;
+  padding-right: 25px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: 0;
+    height: 5%;
+    left: 50%;
+    background: linear-gradient(#00ccff, #d400d4);
+    animation: animate 5s linear infinite;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background: transparent;
+    border-radius: 20px;
+  }
+  .card-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 40px 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .certificate {
+    .card-box {
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .certificate {
+    .card-box {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .certificate {
+    .card-box {
+      grid-template-columns: 1fr;
+    }
+  }
+}

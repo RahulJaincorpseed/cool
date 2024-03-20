@@ -3,7 +3,7 @@ const num = 9
 
 const BinarySearch = (array, number) => {
   let left = 0
-  let right = arr.length - 1
+  let right = array.length - 1
   let mid = parseInt((left + right) / 2)
 
   while (left <= right) {

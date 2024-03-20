@@ -1,0 +1,19 @@
+.cer-card {
+  border: 1px solid #fff;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  .cer-image {
+    height: 200px;
+    width: 100%;
+    padding: 15px;
+    overflow: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .cer-details {
+    padding: 15px;
+  }
+}
